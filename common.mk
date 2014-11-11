@@ -20,6 +20,7 @@ DEVICE_PACKAGE_OVERLAYS += $(COMMON_PATH)/overlay
 
 # Omap4 Packages
 PRODUCT_PACKAGES += \
+    libcorkscrew \
     libedid \
     libion_ti \
     libstagefrighthw \
