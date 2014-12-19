@@ -66,6 +66,7 @@ OMAP_ENHANCEMENT := true
 OMAP_ENHANCEMENT_MULTIGPU := true
 #BOARD_USE_TI_ENHANCED_DOMX := true
 
+ifndef TARGET_USE_KERNEL_PVR
 # External SGX Module
 SGX_MODULES:
 	make clean -C $(COMMON_PATH)/pvr-source/eurasiacon/build/linux2/omap4430_android
@@ -74,6 +75,7 @@ SGX_MODULES:
 	mv $(KERNEL_OUT)/../../target/kbuild/pvrsrvkm_sgx540_120.ko $(KERNEL_MODULES_OUT)
 
 TARGET_KERNEL_MODULES += SGX_MODULES
+endif
 
 # TI Enhancement Settings (Part 2)
 ifdef BOARD_USE_TI_ENHANCED_DOMX
