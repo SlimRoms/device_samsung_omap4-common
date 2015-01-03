@@ -47,6 +47,7 @@ TARGET_DISABLE_CURSOR_LAYER := true
 # RIL
 BOARD_PROVIDES_LIBRIL := true
 BOARD_MODEM_TYPE := xmm6260
+BOARD_RIL_CLASS := ../../../device/samsung/omap4-common/ril
 
 # HWComposer
 BOARD_USES_HWCOMPOSER := true
